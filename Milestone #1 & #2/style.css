@@ -1,0 +1,85 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure padding and border are included in element's total width and height */
+    font-family: 'Century Gothic', sans-serif; /* Added fallback font */
+}
+
+/* General styles for headings */
+.heading {
+    padding: 20px;
+    width: calc(50% - 20px); /* Adjusted for consistent spacing */
+    font-size: 30px;
+    color: #feeb87; /* Converted to hex for consistency */
+    text-align: center;
+    background-color: #c23e3e; /* Shortened color code */
+}
+
+/* Resume container */
+#resume {
+    background-color: #fff; /* Shortened color code */
+    border: 2px solid #252424; /* Shortened color code */
+    width: 50%;
+    padding: 25px 10px;
+    border-radius: 20px;
+}
+
+/* Personal info section */
+.personal {
+    color: #131330; /* Converted to hex */
+    padding: 10px;
+    margin: 10px;
+    font-size: 26px;
+    border-bottom: 2px solid #ffa500; /* Shortened color code for orange */
+    width: calc(100% - 20px); /* Adjusted width to account for margin */
+}
+
+/* General text styling for info, skills, education, and experience sections */
+.info, .skills, .education, .experience {
+    width: 100%;
+    text-align: left;
+}
+
+.info p, .skills p, .education p, .experience p {
+    color: #303030; /* Converted to hex */
+    padding: 8px 20px; /* Combined padding */
+}
+
+/* Skills section */
+.skills {
+    padding-top: 17px;
+}
+
+/* Education section */
+.education {
+    padding-top: 20px;
+}
+
+/* Experience section */
+.experience {
+    padding-top: 20px;
+}
+
+/* Button styling */
+.btn {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#skillsbtn {
+    cursor: pointer;
+    background-color: #3498db; /* Shortened color code */
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    width: 20%; /* Adjusted for better visibility */
+    height: 40px;
+    color: #fff; /* Text color for button */
+    font-size: 16px; /* Added font size */
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+#skillsbtn:hover {
+    background-color: #20608b; /* Shortened color code */
+}

@@ -1,0 +1,158 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Century Gothic', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+/* Heading */
+.heading {
+    padding: 20px 0;
+    color: #336479;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid #f39c12;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Resume form */
+#resume {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Sections */
+.personal,
+.info,
+.skills,
+.experience,
+.education {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.personal {
+    color: #131330;
+    font-size: 26px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info p,
+.skills p,
+.experience p,
+.education p {
+    color: #303030;
+    padding: 8px 0;
+}
+
+/* Form inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Display resume */
+#display-resume {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Skills button */
+#skillsbtn {
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#skillsbtn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .heading,
+    #resume,
+    #display-resume {
+        width: 95%;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    input[type="submit"],
+    #skillsbtn {
+        width: 100%;
+    }
+}

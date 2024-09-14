@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+/* Resume styles */
+#resume {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    transition: all 0.3s ease;
+}
+
+#resume:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styles */
+.heading {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #feca57;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/* Section styles */
+.personal, .info, .skills, .experience, .education {
+    margin-bottom: 2rem;
+}
+
+.personal {
+    font-size: 1.5rem;
+    color: #48dbfb;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #48dbfb;
+    box-shadow: 0 0 0 2px rgba(72, 219, 251, 0.2);
+}
+
+input[type="submit"] {
+    background-color: #5f27cd;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #341f97;
+}
+
+/* Button group styles */
+.btn-grp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#edit-form, #print-resume, #share-resume {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#edit-form:hover, #print-resume:hover, #share-resume:hover {
+    background-color: #ee5253;
+}
+
+/* Display resume styles */
+#display-resume {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 3rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    #resume {
+        padding: 2rem;
+    }
+    
+    .heading {
+        font-size: 2rem;
+    }
+    
+    .btn-grp {
+        flex-direction: column;
+    }
+    
+    #edit-form, #print-resume, #share-resume {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

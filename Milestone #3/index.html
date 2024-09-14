@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ba705aaa7.js" crossorigin="anonymous"></script>
+    <title>Resume</title>
+</head>
+<body>
+    <center>
+    <form id="resume">
+    <div class="heading"><strong>DYNAMIC RESUME</strong></div>
+    <div class="main">
+        <div class="personal"><strong>Personal Info</strong></div>
+        <div class="info">
+        <label for="name" class="inputname"><strong>Name:</strong></label> <br>
+        <input type="text" name="name"  id="name"  placeholder="Enter Your Name" required>
+        <br> <br>
+        <label for="email" class="inputname"><strong>Email:</strong></label> <br>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required> 
+        <br> <br>
+        <label for="phone" class="inputname"><strong>Phone:</strong></label> <br>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your number" required>
+        <br> <br>
+        <label for="address" class="inputname"><strong>Address:</strong></label> <br>
+        <input type="text" name="address" id="address" placeholder="Enter your Address" required>
+        <br> <br>
+        </div>
+        
+    
+        <div class="personal"><strong>Skills</strong></div>
+        <div class="skills">
+        <label for="skills" class="inputname"><strong>Skills:</strong></label> <br>
+        <input type="text" name="skills" id="skills" placeholder="Enter Your Skills" required>
+        <br> <br>
+        </div>
+
+       
+        <div class="personal"><strong>Education</strong></div>
+        <div class="education">
+        <label for="education" class="inputname"><strong>Education:</strong></label> <br>
+        <textarea name="education" id="education" placeholder="Enter Your Education" required></textarea>
+        <br> <br>
+        </div>
+
+    
+        <div class="personal"><strong>Experience</strong></div>
+        <div class="experience">
+        <label for="experience" class="inputname"><strong>Work Experience (i.e: 2 years):</strong></label> <br>
+        <input type="text" name="experience" id="experience" placeholder="Enter Your Experience" required>
+        <br> <br>
+        </div>
+        <input type="submit" class="inputname" value="Generate Resume">
+    </form>
+    </div>
+    <br>
+
+<div id="display-resume">
+    
+</div>
+
+</center>
+</body>
+<script src="index.js"> </script>
+</html>
